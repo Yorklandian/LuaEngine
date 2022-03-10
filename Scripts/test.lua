@@ -7,7 +7,7 @@
 local GameObject=require("Scripts.GameObject")
 local TaskManager=require('Scripts.TaskManager')
 local tm=TaskManager.getTaskManager()
-local wiat=TaskManager.wait
+local wait=TaskManager.wait
 
 local g1=GameObject:Create(1,"./Resource/Smile.jpg",200,200,50,50)
 local g2=GameObject:Create(2,"./Resource/Smile2.jpg",500,500,50,50)
@@ -16,6 +16,8 @@ print(g2.left)
 
 function task1()
     g1:Move(2)
+    wait(0.1)
+    g1:Move(5)
 end
 
 function task2()
