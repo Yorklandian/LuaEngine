@@ -142,8 +142,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Source\CReg2Lua.cpp" />
     <ClCompile Include="LuaEngine.cpp" />
+    <ClCompile Include="Source\CReg2Lua.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\CReg2Lua.h" />
