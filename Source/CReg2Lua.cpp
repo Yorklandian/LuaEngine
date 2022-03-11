@@ -42,7 +42,21 @@ int lua_clear_rect(lua_State* L)
 	return 0;
 }
 
-int luaopen_image_libs(lua_State* L)
+int lua_init_graph(lua_State* L)
+{
+	int width = lua_tonumber(L, 1);
+	int height = lua_tonumber(L, 2);
+	initgraph(width, height, EW_SHOWCONSOLE);
+	return 0;
+}
+
+int lua_close_graph(lua_State* L)
+{
+	closegraph();
+	return 0;
+}
+
+int luaopen_imagelibs(lua_State* L)
 {
 	luaL_newlib(L, lua_reg_image_funcs);
 	return 1;
