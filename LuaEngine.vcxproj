@@ -155,9 +155,10 @@
   <ItemGroup>
     <None Include="imagelibs.dll" />
     <None Include="Lua.exe" />
-    <None Include="Scripts\GameObject.lua" />
-    <None Include="Scripts\IMGLib.lua" />
-    <None Include="Scripts\TaskManager.lua" />
+    <None Include="Scripts\Engine\GameObject.lua" />
+    <None Include="Scripts\Engine\IMGLib.lua" />
+    <None Include="Scripts\Engine\Mission.lua" />
+    <None Include="Scripts\Engine\TaskManager.lua" />
     <None Include="Scripts\test.lua" />
     <None Include="start.lua" />
   </ItemGroup>

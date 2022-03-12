@@ -1,5 +1,5 @@
-local IMGLib=require("Scripts.IMGLib")
-local TaskManager=require('Scripts.TaskManager')
+local IMGLib=require("Scripts.Engine.IMGLib")
+local TaskManager=require('Scripts.Engine.TaskManager')
 local wiat=TaskManager.wait
 
 
